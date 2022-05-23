@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@300&family=Sniglet&display=swap');
+
+*
+{
+    box-sizing: border-box;
+}
+
+header,section,footer
+{
+    overflow-x: hidden;
+}
+
+:root
+{
+    --Single-font:"Sniglet",cursive;
+    --Rubik:"Rubik",cursive;
+    --Patua:"Patua One",cursive;
+    --Lobster:"Lobster",cursive;
+    --light-black:#2e2c2caf;
+    --bggradient:linear-gradient(
+        to bottom,
+        #dd2476,#ff512f);
+        --light-gray:rgba(255,255,255,0)
+}
+
+header a
+{
+    font-family: var(--Single-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header
+{
+    height: 100%;
+    background: #dd2476;
+    background: var(--bggradient);
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown-content a:hover
+{
+    background: rgb(173, 29, 29);
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+header .navbar-nav
+{
+    padding-left: 40.5em;
+}
+
+header .nav-item:last-child
+{
+     padding-left: 40.5em;
+}
+
+header .nav-item
+{
+    padding:0.9em
+}
+
+header .navbar-brand
+{
+padding-left: 8rem;
+}
+
+header .nav-link:hover{
+    color: black
+}
+
+header .navbar-brand:hover{
+    color: black;
+}
+
+header .row .col-md-5
+{
+    padding: 4.5vmin,1vmin;
+}
+
+header .row .col-md-7
+{
+    padding: 18vmin 5vmin 18vmin 5vmin;
+    font-family: var(--Rubik);
+    color: white;
+
+}
+
+header .row .col-md-5 img{
+    padding-top: 18vmin;
+    padding-bottom: 18vmin;
+    width: 100vmin;
+}
+
+header .row .col-md-7 h6{
+    letter-spacing: 4px;
+    padding: 1vmin;
+}
+
+header .row .col-md-7 h1
+{
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+header .row .col-md-7 p{
+    padding: 1vmin 5vmin;
+}
+
+header .row .col-md-7 button{
+    font-weight: bold;
+    border-radius: 2em;
+}
+
+/*section-1*/
+
+.section-1
+{
+    padding: 15vmin 0;
+}
+
+.section-1 .row .col-md-6 .pray img
+{
+    opacity: 0.8;
+    width: 70%;
+    border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child
+{
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel
+{
+    position: absolute;
+    top: 7vmin;
+    left: -20vmin;
+    background-color: white;
+    box-shadow: 13vmin 1vmin 20vmin rgba(0, 0, 0,0.2);
+    border-radius: 0.2em;
+    padding: 13vmin 10vmin 20vmin 10vmin;
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+.section-1 .row .col-md-6 .panel h1
+{
+    font-weight:bold;
+    padding: 0.4em 0;
+}
+
+.section-1 .row .col-md-6 .panel p
+{
+    font-size: 00.9em;
+    color: rgba(0, 0, 0,0.5);
+}
+
+/*section-2*/
+
+.cover
+{
+    width: 100%;
+    height: 55vmin;
+    background: url(../assets/pexels-cesar-perez-733745.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: -0rem -30rem;
+}
+
+.cover .content
+{
+    width: 100%;
+    height: 55vmin;
+    padding-top: 18vmin;
+    background-color: rgba(0, 0, 0,0.5);
+    color: whitesmoke;
+}
+
+.cover .content h1{
+    font-family: var(--Patua);
+    font-size: 6vmin;
+}
+
+.cover .content p{
+    font-family: var(--Rubik);
+    font-size: 3vmin;
+}
+
+.numbers .rect
+{
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 1em;
+    box-shadow: 1px 2px 50px 0px rgb(242, 243, 162);
+}
+
+.numbers
+{
+    margin-top: -5rem;
+}
+
+.numbers .rect h1
+{
+    margin-top: 1rem;
+    font-size: 10vmin;
+    color: rgb(242, 243, 162);;
+}
+
+.numbers .rect p{
+    font-family: var(--Patua);
+}
+
+.purchase h1{
+    font-family: var(--Lobster);
+    padding-top: 15vmin;
+    padding-bottom: 00.1em;
+}
+
+.purchase p{
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 15vmin;
+}
+
+.cards
+{
+    position: relative;
+
+}
+.cards div
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+.cards .card
+{
+    width: 22rem;
+    margin: 3rem;
+
+}
+
+.cards .card .card-body .title
+{
+    background: rgba(208, 241, 241, 0.199);
+}
+.cards .card .card-body .title h5
+{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.cards .card .card-body .card-text
+{
+    padding: 5rem 2.3rem;
+    color: var(--light-black);
+}
+
+.cards .card .card-body .pricing
+{
+    background: rgba(208, 241, 241, 0.199);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+.cards .card .card-body .pricing button{
+    border-radius: 2rem;
+}
+
+.cards .card .card-body .pricing h1{
+    font-size: 10vmin;
+    padding: 2rem 0.5rem;
+}
+
+.section-3
+{
+    margin-top: 8rem;
+    background: var(--bggradient);
+    height: 70vmin;
+}
+
+.section-3 .col-md-12 h1{
+    padding: 2em 0 0.5em 0;
+    color: white;
+}
+
+.section-3 .col-md-12 p{
+    padding: 0.2em 10em;
+    font-size: 3vmin;
+    color: whitesmoke;
+}
+
+.platform
+{
+    margin-top: 6em;
+}
+
+.platform .desktop button
+{
+    background: white;
+    border-radius: 3rem;
+    padding: 10vmin vmin;
+    float: right;
+    margin-right: 1em;
+}
+
+.platform .mobile button
+{
+    background: white;
+    border-radius: 3rem;
+    padding: 10vmin vmin;
+    float: left;
+    margin-right: 1em;
+}
+
+.section-4 .container{
+    padding: 5em 0;
+
+}
+
+.section-4 .team
+{
+    padding: 10vmin 10vmin;
+}
+
+.section-4 .card
+{
+    width: 22rem;
+}
+
+.section-4 .card .card-text
+{
+    padding: 3rem 1rem;
+}
+
+.section-4 .card-img-top
+{
+    padding-top: 5vmin;
+}
+
+.section-4 .card a{
+    font-size: 1.5em;
+}
+
+.section-4 .container h1
+{
+    font-family: var(--Lobster);
+}
+
+.section-4 .card h3
+{
+    font-family: var(--Lobster);
+}
+
+footer .row .col-md-5
+{
+    margin-top: 4rem;
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+
+}
+
+footer input{
+    border: none !important;
+}
+
+footer input::placeholder
+{
+    color: black !important;
+}
+
+footer .input-group .input-group-text
+{
+    margin-right: 10em;
+    background: var(--bggradient);
+}
+
+footer .col-md-2 h4{
+    margin-top: 4rem;
+}
+footer .column i
+{
+    color: #d61313
+}
+
+footer .column i+i{
+    margin: 0.5em;
+}

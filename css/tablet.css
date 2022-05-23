@@ -1,0 +1,49 @@
+@media only screen and (max-width:768px){
+    header .navbar-brand
+    {
+        padding-left: 6vmin;
+    }
+
+    .section-3 .row h1
+    {
+        font-size: 5vmin;
+        padding: 2vmin 3vmin;
+    }
+
+    .section-3 .row p
+    {
+        font-size: 3vmin;
+        padding: 2vmin 3vmin;
+        margin-bottom: 0%;
+    }
+
+    .section-3
+    {
+        height: 70vmin;
+    }
+
+    .section-4 .team
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .section-4 .carousel-inner
+    {
+        width: 24rem;
+    }
+
+    .section-1 .row .col-md-6 .panel
+    {
+        position: initial;
+        width: initial;
+        height: initial;
+
+    }
+
+    footer .input-group .input-group-text
+    {
+        margin: 0em;
+    }
+}
